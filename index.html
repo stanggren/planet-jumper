@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/planets.css" />
+    <link rel="stylesheet" href="styles/prompts.css" />
+    <script defer src="script.js"></script>
+    <title>Planet Jumper</title>
+  </head>
+  <body>
+    <main>
+      <svg id="sun" class="planet-fixed">
+        <linearGradient id="sun-gradient">
+          <stop offset="10%" stop-color="#ff5719" />
+          <stop offset="90%" stop-color="#ff7b4b" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('sun')"
+          cx="120"
+          cy="120"
+          r="120"
+          fill="#088DA5"
+        />
+      </svg>
+      <svg id="green-planet" class="planet-fixed">
+        <linearGradient id="green-gradient" gradientTransform="rotate(380)">
+          <stop offset="10%" stop-color="#8bcd7a" />
+          <stop offset="90%" stop-color="#62d945" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('green')"
+          id="green-circle"
+          cx="52"
+          cy="52"
+          r="50"
+          fill="#5ea34c"
+        />
+      </svg>
+      <svg id="blue-planet" class="planet-fixed">
+        <linearGradient id="blue-gradient">
+          <stop offset="10%" stop-color="#088da5" />
+          <stop offset="90%" stop-color="#92e7e6" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('blue')"
+          id="blue-circle"
+          cx="42"
+          cy="42"
+          r="40"
+          fill="#088DA5"
+        />
+      </svg>
+      <svg id="purple-planet" class="planet-fixed">
+        <linearGradient id="purple-gradient" gradientTransform="rotate(5)">
+          <stop offset="10%" stop-color="#bb9bbb" />
+          <stop offset="90%" stop-color="#843284" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('purple')"
+          id="purple-circle"
+          cx="62"
+          cy="62"
+          r="60"
+          fill="#843284"
+        />
+      </svg>
+      <svg id="brown-planet" class="planet-fixed">
+        <linearGradient id="brown-gradient" gradientTransform="rotate(65)">
+          <stop offset="10%" stop-color="#c87807" />
+          <stop offset="90%" stop-color="#ffcd87" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('brown')"
+          id="brown-circle"
+          cx="38"
+          cy="38"
+          r="35"
+          fill="#C87807"
+        />
+      </svg>
+      <svg id="lightblue-planet" class="planet-fixed">
+        <linearGradient id="lightblue-gradient" gradientTransform="rotate(65)">
+          <stop offset="10%" stop-color="#90b7b6" />
+          <stop offset="90%" stop-color="#aedbdb" />
+        </linearGradient>
+        <circle
+          onclick="clickedPlanet('lightblue')"
+          id="lightblue-circle"
+          cx="17"
+          cy="17"
+          r="15"
+          fill="#90B7B6"
+        />
+      </svg>
+      <div id="start-menu" class="prompt-fixed">
+        <h1>Planet Jumper</h1>
+        <p>You live on the Green Planet.</p>
+        <p>Your MFQAP (Main Frame Quantum Air Purifier) needs a new battery.</p>
+        <p>Search the other planets to find a battery and save your planet!</p>
+        <p>Travel to other planets by clicking on them.</p>
+        <p>
+          Don't travel to the big orange thing in the middle. That's the sun.
+        </p>
+        <button onclick="startGame()">start</button>
+      </div>
+      <div id="prompt" class="prompt-fixed">
+        <h1></h1>
+        <p></p>
+        <button id="prompt-button" onclick="hidePrompt()"></button>
+      </div>
+      <div id="multiple-choice-prompt" class="prompt-fixed">
+        <h1></h1>
+        <p></p>
+        <div class="buttons">
+          <button onclick="renderPrompt('room1')"></button>
+          <button onclick="renderPrompt('room2')"></button>
+          <button onclick="renderPrompt('room3')"></button>
+          <button onclick="hideMultipleChoicePrompt()"></button>
+        </div>
+      </div>
+      <div id="win-prompt" class="prompt-fixed">
+        <h1>You saved the planet!</h1>
+        <p>The MFQAP is finally working again.</p>
+        <button id="win-prompt-button" onclick="resetGame()">Play again</button>
+      </div>
+    </main>
+  </body>
+</html>

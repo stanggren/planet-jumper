@@ -1,0 +1,97 @@
+/* REUSABLE */
+.planet-fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+/* PLANETS */
+
+#sun{
+    top: 20rem;
+
+    width: 15rem;
+    height: 15rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sun circle {
+    fill: url(#sun-gradient);
+}
+
+#green-planet{
+    top: 40rem;
+
+    width: 6.8rem;
+    height: 6.8rem;
+
+    margin-right: auto;
+    padding-left: 70%;
+}
+
+#green-planet circle {
+    fill: url(#green-gradient);
+}
+
+#blue-planet{
+    top: 40rem;
+
+    width: 5.5rem;
+    height: 5.5rem;
+
+    margin-right: auto;
+    padding-left: 20%;
+}
+
+#blue-planet circle {
+    fill: url(#blue-gradient);
+}
+
+#purple-planet{
+    top: 15rem;
+
+    width: 8rem;
+    height: 8rem;
+
+    margin-left: auto;
+    padding-right: 10%;
+}
+
+#purple-planet circle {
+    fill: url(#purple-gradient);
+}
+
+#brown-planet{
+    top: 5rem;
+
+    width: 5rem;
+    height: 5rem;
+
+    margin-right: auto;
+    padding-left: 10%;
+}
+
+#brown-planet circle {
+    fill: url(#brown-gradient);
+}
+
+#lightblue-planet{
+    top: 17rem;
+
+    width: 2.2rem;
+    height: 2.2rem;
+
+    margin-left: auto;
+    padding-right: 45%;
+}
+
+#lightblue-planet circle {
+    fill: url(#lightblue-gradient);
+}
+
+circle:hover {
+    cursor: pointer;
+}
+

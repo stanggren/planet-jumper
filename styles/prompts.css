@@ -1,0 +1,96 @@
+/* REUSABLE */
+
+.prompt-fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 15rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PROMPTS */
+
+#start-menu{
+    width: 30rem;
+    height: 25rem;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(186,37,79, 0.96);
+}
+
+#start-menu > * {
+    color: white;
+    text-transform:uppercase;
+}
+
+#prompt {
+    width: 25rem;
+    height: fit-content;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(186,37,79, 0.96);
+
+    display: none;
+}
+
+#prompt > * {
+    color: white;
+    text-transform:uppercase;
+}
+
+#multiple-choice-prompt{
+    width: 30rem;
+    height: fit-content;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(186,37,79, 0.96);
+
+    display: none;
+}
+
+#multiple-choice-prompt > * {
+    color: white;
+    text-transform:uppercase;
+}
+
+.buttons{
+    display:flex;
+}
+
+.buttons button {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    text-transform:uppercase;
+}
+
+input {
+    width: 4rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    color: black!important;
+}
+
+#win-prompt{
+    width: 30rem;
+    height: fit-content;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(186,37,79, 0.96);
+
+    display: none;
+}
+
+#win-prompt > * {
+    color: white;
+    text-transform:uppercase;
+}

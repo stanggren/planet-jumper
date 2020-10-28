@@ -1,0 +1,37 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 100%, rgba(58,59,89,1) 100%); */
+    background-image: url("/images/space.jpg");
+    background-size: cover;
+}
+
+/* REUSABLE*/
+
+button {
+    width: fit-content;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0);
+	color: inherit;
+    border: 2px solid white;
+    border-radius: 10px;
+	cursor: pointer;
+    outline: inherit;
+    letter-spacing: 1px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:hover{
+    background: rgba(0, 0, 0, 0.0);
+}
+
+
+
