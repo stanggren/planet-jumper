@@ -10,7 +10,7 @@ main {
     height: 100vh;
     /* background: rgb(2,0,36);
     background: linear-gradient(184deg, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 100%, rgba(58,59,89,1) 100%); */
-    background-image: url("/images/space.jpg");
+    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     background-size: cover;
 }
 
