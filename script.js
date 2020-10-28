@@ -330,7 +330,7 @@ function renderPrompt(prompt) {
       }
       break;
     case "room3":
-      promptContainer.childNodes[1].textContent = "Second room";
+      promptContainer.childNodes[1].textContent = "Third room";
       promptContainer.childNodes[3].textContent = planets[2].promptContent.doors.room3.text;
       promptContainer.childNodes[5].textContent = planets[2].promptContent.doors.room3.button;
       player.haveKeycard = true;
