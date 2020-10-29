@@ -2,9 +2,9 @@
 
 ## Description
 
-Simple DOM point and click adventure. 
-Travel the solar system to solve the energy crisis of your planet.
-Save your planet by finding a battery. Travel to other planets by clicking on them, find clues and items to get you closer to find that battery.
+Simple DOM point and click adventure.   
+Travel the solar system to solve the energy crisis of your planet.     
+Save your planet by finding a battery. Travel to other planets by clicking on them. Find clues and items to get you closer of finding that battery.   
 Built with vanilla JS, HTML and CSS. Hosted on github pages.
 
 ## Play the game
